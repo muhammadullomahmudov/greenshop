@@ -1,0 +1,301 @@
+.product-container {
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.category {
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+.sidebar {
+  width: 310px;
+  height: auto;
+  background-color: #FBFBFB;
+  padding: 14px 28px;
+  flex: 1; 
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: -25px;
+  cursor: pointer;
+}
+
+.sidebar ul .active {
+  font-weight: bold;
+  color: green;
+}
+
+.price-range {
+  margin-top: 20px;
+}
+
+.price-range h3 {
+  font-family: Cera Pro;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3D3D3D;
+}
+
+.price-range .price-values {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.price-values p {
+  font-family: Cera Pro;
+  font-size: 15px;
+  font-weight: 700;
+  color: #46A358;
+}
+
+.price-range button {
+  font-family: Cera Pro;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #46A358;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 6px;
+}
+
+.products {
+  flex: 3;
+  display: flex;
+
+  margin-left: -20px;
+  flex-wrap: wrap;
+}
+
+.product-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-header ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.product-header ul li {
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: Cera Pro;
+  font-size: 15px;
+  font-weight: 700;
+  color: #3D3D3D;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 258px;
+  height: 300px;
+  background-color: #FBFBFB;
+}
+
+.product-icons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  gap: 10px;
+  z-index: 2;
+}
+
+.product-icons img {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.product-icons img:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover .product-icons {
+  display: flex;
+}
+
+.product-card h4 {
+  font-family: Cera Pro;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3D3D3D;
+  margin: 12px 0 -6px 7px;
+}
+
+.product-card p {
+  font-family: Cera Pro;
+  font-size: 18px;
+  font-weight: 700;
+  color: #46A358;
+  margin-left: 7px;
+}
+
+.category-active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.category-active p {
+  font-family: Cera Pro;
+  font-size: 15px;
+  font-weight: 700;
+  color: #3D3D3D;
+}
+
+.categories h3,
+.size h3 {
+  font-family: Cera Pro;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3D3D3D;
+}
+
+.size img {
+  width: 420px;
+  height: 470px;
+  margin-left: -50px;
+  margin-top: -13px;
+}
+
+.product-select,
+.sort {
+  font-family: Cera Pro;
+  font-size: 15px;
+  font-weight: 400;
+  color: #3D3D3D;
+  border: none;
+}
+
+.sizebox {
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.size {
+}
+
+
+
+@media (max-width: 1024px) {
+  .product-container {
+      flex-direction: column;
+      gap: 30px;
+  }
+
+  .sidebar {
+      width: 100%;
+      padding: 14px 20px;
+  }
+
+  .products {
+      flex: 1;
+  }
+
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-card h4 {
+      font-size: 14px;
+  }
+
+  .product-card p {
+      font-size: 16px;
+  }
+
+  .price-range h3 {
+      font-size: 16px;
+  }
+
+  .price-values p {
+      font-size: 14px;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .product-container {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+      padding: 14px;
+  }
+
+  .products {
+      flex: 1;
+  }
+
+  .product-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .product-card h4 {
+      font-size: 14px;
+  }
+
+  .product-card p {
+      font-size: 16px;
+  }
+
+  .price-range h3 {
+      font-size: 16px;
+  }
+
+  .price-values p {
+      font-size: 14px;
+  }
+}

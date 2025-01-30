@@ -1,0 +1,161 @@
+.header {
+  margin-bottom: 36px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-container {
+  border-bottom: 0.3px solid #46A35880;
+}
+
+.header__inner {
+  display: flex;
+  background-color: white;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #32a852;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-link {
+  color: #555;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.home {
+  color: #3D3D3D;
+  border-bottom: 3px solid #46A358;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #32a852;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+  .container {
+      width: 100%;
+      padding: 0 20px;
+  }
+
+  .nav {
+      gap: 30px;
+  }
+
+  .logo {
+      font-size: 20px;
+  }
+
+  .header__inner {
+      padding: 12px;
+  }
+
+  .actions {
+      gap: 20px;
+  }
+
+  .login-button {
+      font-size: 14px;
+      padding: 6px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__inner {
+      flex-direction: column;
+      padding: 12px 8px;
+  }
+
+  .nav {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+  }
+
+  .nav-link {
+      font-size: 14px;
+  }
+
+  .actions {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .logo {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+
+  .login-button {
+      font-size: 14px;
+      padding: 8px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__inner {
+      padding: 10px 6px;
+  }
+
+  .nav {
+      gap: 15px;
+  }
+
+  .logo {
+      font-size: 16px;
+  }
+
+  .actions {
+      gap: 10px;
+  }
+
+  .login-button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}
