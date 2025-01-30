@@ -3,12 +3,14 @@
     font-family: Arial, sans-serif;
     color: #333;
   }
+  
   .footer-box {
     display: flex;
     align-items: center;
     gap: 90px;
     margin-bottom: 50px;
   }
+  
   .footer-top {
     display: flex;
     flex-wrap: wrap;
@@ -23,10 +25,12 @@
     flex: 3;
     flex-wrap: wrap;
   }
+  
   .box {
     display: flex;
     align-items: center;
   }
+  
   .footer-card {
     flex: 1;
     background: #fff;
@@ -151,6 +155,7 @@
     }
     .footer-social-icons {
       justify-content: center;
+      gap: 15px; 
     }
   }
   

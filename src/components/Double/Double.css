@@ -1,4 +1,4 @@
-.banner-section {
+.promo-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -7,7 +7,7 @@
   padding: 20px;
 }
 
-.banner {
+.promo {
   max-width: 586px;
   display: flex;
   background-color: #FBFBFB;
@@ -15,19 +15,19 @@
   flex-direction: row;
 }
 
-.banner img {
+.promo img {
   width: 50%;
   object-fit: cover;
 }
 
-.banner-content {
+.promo-content {
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.banner-content h3 {
+.promo-content h3 {
   font-family: Cera Pro;
   font-size: 18px;
   font-weight: 900;
@@ -37,7 +37,7 @@
   margin-bottom: 0px;
 }
 
-.banner-content p {
+.promo-content p {
   font-family: Cera Pro;
   font-size: 14px;
   font-weight: 400;
@@ -46,7 +46,7 @@
   color: #727272;
 }
 
-.find-more {
+.explore-more {
   align-self: flex-end;
   padding: 10px 20px;
   background-color: #46a358;
@@ -58,41 +58,41 @@
   transition: background-color 0.3s;
 }
 
-.find-more:hover {
+.explore-more:hover {
   background-color: #3d8b50;
 }
 
 @media (max-width: 768px) {
-  .banner {
+  .promo {
       flex-direction: column;
       max-width: 100%;
   }
   
-  .banner img {
+  .promo img {
       width: 100%;
       height: auto;
   }
   
-  .banner-content {
+  .promo-content {
       padding: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .banner-section {
+  .promo-section {
       margin-top: 100px;
       gap: 15px;
   }
   
-  .banner-content h3 {
+  .promo-content h3 {
       font-size: 16px;
   }
   
-  .banner-content p {
+  .promo-content p {
       font-size: 12px;
   }
   
-  .find-more {
+  .explore-more {
       font-size: 12px;
       padding: 8px 16px;
   }

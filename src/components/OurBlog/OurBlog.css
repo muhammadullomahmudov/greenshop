@@ -1,36 +1,26 @@
 .blog-section {
   padding: 40px 20px;
-  text-align: center;
+  background-color: #f9f9f9;
 }
 
 .blog-container {
-  gap: 57px;
-}
-
-.blog-section h2 {
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
-  color: #3D3D3D;
-}
-
-.blog-section .subtitle {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 30px;
 }
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
 }
 
 .blog-card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .blog-card img {
@@ -40,84 +30,44 @@
 }
 
 .blog-content {
-  padding: 15px;
-}
-
-.blog-content .date {
-  font-size: 12px;
-  color: #46a358;
-  margin-bottom: 10px;
+  padding: 20px;
 }
 
 .blog-content h4 {
   font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #3d3d3d;
+  color: #333;
+  margin: 10px 0;
+}
+
+.blog-content .date {
+  font-size: 12px;
+  color: #888;
 }
 
 .blog-content .description {
   font-size: 14px;
   color: #666;
-  margin-bottom: 15px;
+  margin: 10px 0;
 }
 
 .read-more {
   font-size: 14px;
-  font-weight: bold;
-  color: #3D3D3D;
+  color: #4caf50;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
 .read-more:hover {
-  color: #46A358;
+  text-decoration: underline;
 }
 
-
-@media (max-width: 1024px) {
-  .blog-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-  }
-
-  .blog-section {
-      padding: 30px 20px;
-  }
-
-  .blog-content h4 {
-      font-size: 16px;
-  }
-
-  .blog-content .description {
-      font-size: 12px;
-  }
-
-  .read-more {
-      font-size: 12px;
-  }
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
-  .blog-grid {
-      grid-template-columns: 1fr;
-      gap: 20px;
-  }
-
-  .blog-section {
-      padding: 20px 10px;
-  }
-
-  .blog-content h4 {
-      font-size: 14px;
-  }
-
-  .blog-content .description {
-      font-size: 12px;
-  }
-
-  .read-more {
-      font-size: 12px;
+  .blog-container {
+    padding: 0 20px;
   }
 }
-
